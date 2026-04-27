@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <img id="avatar" src="C:\Users\joaov\OneDrive\Pictures\WhatsApp Image 2025-08-30 at 22.50.27_8fae24de.jpg" alt="Avatar do usuário">
+        <div class="info-perfil">
+            <h1>João Vitor Farias de Amorim</h1>
+            <p class="profissao">Estudante de Engenharia de Software</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#conteudo-principal">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="btn-tema">🌙 Escuro</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <h2>Minhas Habilidades</h2>
+        <div class="cards-container">
+            <article class="card">
+                <h3>Java</h3>
+                <p>Desenvolvimento e arquiteturas escaláveis para o back-end.</p>
+                <span class="nivel">Intermediário</span>
+            </article>
+
+            <article class="card">
+                <h3>Python & Data Tools</h3>
+                <p>Criação de scripts, automação e dashboards interativos com Streamlit.</p>
+                <span class="nivel">Intermediário</span>
+            </article>
+
+            <article class="card">
+                <h3>HTML, CSS e JavaScript</h3>
+                <p>Construção de interfaces modernas, performáticas e responsivas no front-end.</p>
+                <span class="nivel">Básico</span>
+            </article>
+        </div>
+    </main>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato" novalidate>
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+            </div>
+
+            <div class="campo">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="freelance">Projeto Freelance</option>
+                    <option value="parceria">Parceria Acadêmica</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" maxlength="300" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                <small id="contador-caracteres">0/300 caracteres</small>
+            </div>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o Desafio Web</p>
+    </footer>
+
+</body>
+</html>
